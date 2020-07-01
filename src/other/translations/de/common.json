@@ -1,0 +1,103 @@
+{
+  "intro_title": "WORLDS FIRST VIRTUAL",
+  "intro_subTitle": "9 - 10 june 2020",
+  "intro_text": "Live streaming, events and meetings. Connect with the biggest companies and suppliers in the world",
+
+  "btn_contactUs": "contact us",
+  "btn_register": "register now",
+  "btn_watchVideo": "watch the video",
+  "btn_terms": "terms",
+  "btn_privacy": "privacy",
+  "btn_followUs": "follow us",
+
+  "features_fishingСompanies": "fishing companies",
+  "features_processingPlants": "processing plants",
+  "features_serviceProviders": "service providers",
+  "features_shipowners": "shipowners",
+
+  "referenceSection_title": "reference list",
+  "referenceSection_list": [
+    {
+      "text": "W. van Der Zwaan",
+      "img": "Emoji-1.svg"
+    },
+    {
+      "text": "K. Halstensen AS",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Halstensen Granit AS",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Cornelis Vrolijk/Jaczon",
+      "img": "Emoji-1.svg"
+    },
+    {
+      "text": "Nesbakk",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Murmansk Trawl Fleet",
+      "img": "Emoji-3.svg"
+    },
+    {
+      "text": "Gerda Marie AS",
+      "img": "Emoji-2.svg"
+    },
+    {
+      "text": "Brim",
+      "img": "Emoji-4.svg"
+    },
+    {
+      "text": "Havsbrún",
+      "img": "Emoji-5.svg"
+    },
+    {
+      "text": "Varðin",
+      "img": "Emoji-5.svg"
+    },
+    {
+      "text": "Scandic Pelagic",
+      "img": "Emoji-6.svg"
+    },
+    {
+      "text": "Norebo",
+      "img": "Emoji-3.svg"
+    },
+    {
+      "text": "Varðin Pelagic",
+      "img": "Emoji-5.svg"
+    },
+    {
+      "text": "Royal Greenland",
+      "img": "Emoji-8.svg"
+    },
+    {
+      "text": "DEFA Group",
+      "img": "Emoji-3.svg"
+    },
+    {
+      "text": "Hardhaus AS",
+      "img": "Emoji-2.svg"
+    }
+  ],
+
+  "plans_text": "Publish products, promotional videos and services on FISHFACTS. <br> Upload contact information, phone and email address. It is simple and straightforward.",
+  "plans_title": "Virtual floor plan",
+  "plans_subTitleA": "fishfacts <1> hall A</1>",
+  "plans_subTitleB": "fishfacts <1> hall B</1>",
+  "plans_subTitleC": "fishfacts <1> hall C</1>",
+  "plans_subTitleD": "fishfacts <1> hall D</1>",
+  "plans_gridRegister": "Register now",
+  "plans_gridStreamming": "Live streaming",
+
+  "infoStatistic_text_1": "fishing vessels",
+  "infoStatistic_text_2": "countries",
+  "infoStatistic_num_1": "400+",
+  "infoStatistic_num_2": "15+",
+  "infoStatistic_title": "Want to join them?",
+
+  "approach_title": "individual approach",
+  "approach_text": "We are attentive to each user, listen to all wishes and respond to requests as quickly as possible. <br> We are open to wishes for improving our service for your convenience."
+}

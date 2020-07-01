@@ -1,0 +1,62 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Navigation {
+  width: 100%;
+  background: $color-black;
+  padding: 15px 0;
+  font-size: 20px;
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+
+    .nav-item {
+      padding: 0 20px;
+      border-left: 1px solid #474747;
+      position: relative;
+
+      @include breakpoint(md) {
+        padding: 5px 0;
+        border: 0;
+      }
+
+      &:first-child {
+        border: 0;
+      }
+
+      &:hover {
+        .nav-link {
+          color: $primary;
+        }
+
+        >ul {
+          display: block;
+        }
+      }
+
+      >ul {
+        @include list-reset;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 99%;
+        padding: 6px 28px 10px;
+        background: $color-black;
+        white-space: nowrap;
+      }
+    }
+
+    .nav-link {
+      cursor: pointer;
+      color: $color-white;
+
+      &.active,
+      &:focus,
+      &:hover {
+        color: $primary;
+        opacity: 1;
+      }
+    }
+  }
+}

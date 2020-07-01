@@ -1,0 +1,99 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Header {
+  padding: 20px 0;
+  display: flex;
+  flex: auto;
+  width: 100%;
+
+  @include breakpoint(md) {
+    padding: 15px 0;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      margin-right: 24px;
+    }
+
+    a {
+      color: $color-black-dark;
+    }
+  }
+
+  &__logo {
+    img {
+      @include breakpoint(md) {
+        width: 130px;
+      }
+    }
+  }
+
+  .row {
+    width: calc(100% + 30px);
+  }
+}
+
+.navbar {
+  padding: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: $color-white;
+
+  &-toggler {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-color: $primary !important;
+
+    &-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+  }
+}
+
+.navbar-expand-md {
+  @include breakpoint(md-up) {
+    flex-flow: column nowrap;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+}
+
+// .Header {
+//   @include transition;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 100;
+//   padding: 20px 0;
+
+//   .app-container-lg {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+
+//   &__sticky {
+//     background: $color-primary;
+//   }
+
+//   &__btns {
+//     @include breakpoint(md) {
+//       display: none;
+//     }
+
+//     .Button {
+//       margin-left: 24px;
+//     }
+//   }
+// }

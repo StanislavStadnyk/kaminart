@@ -1,0 +1,42 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Info {
+  margin-bottom: 34px;
+
+  @include breakpoint(md-up) {
+    margin-bottom: 50px;
+  }
+
+  .row {
+    >div {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__box {
+    text-align: center;
+    padding: 0 1rem;
+
+    @include breakpoint(md-up) {
+      text-align: left;
+      padding: 1.4rem 2.5rem 0;
+    }
+
+    h4 {
+      margin-bottom: 1.5rem;
+
+      strong {
+        color: $primary;
+      }
+    }
+
+    P {
+      font-size: 1rem;
+
+      @include breakpoint(md-up) {
+        font-size: 1.125rem;
+      }
+    }
+  }
+}

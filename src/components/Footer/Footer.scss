@@ -1,0 +1,46 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.Footer {
+  padding: 20px 0;
+  background: $color-black;
+
+  .Logo {
+    background: $color-white;
+    display: inline-block;
+    vertical-align: top;
+
+    img {
+      @include breakpoint(md-up) {
+        width: 130px;
+      }
+    }
+  }
+
+  &__contacts {
+    @include list-reset;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+
+      @include breakpoint(md-up) {
+        margin-left: 40px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,53 @@
+// colors
+$color-green: #9bad01;
+$color-black: #343434;
+$color-black-dark: #000;
+$color-grey-light: #f3f3f3;
+
+// TB
+// Colors
+$primary: $color-green;
+
+// Spacing
+$body-bg: $color-grey-light;
+
+// Typography
+$font-family-base: 'Open Sans Condensed',
+sans-serif;
+$font-size-base: 1.1rem;
+
+// colors
+$color-white: #fff;
+$color-grey-light-2: #f7f7f7;
+// $color-black-dark: #000;
+$color-text: #020814;
+$color-green-light: #45dabe;
+$color-blue-dark: #18223d;
+
+$color-success: #00d8ac;
+$color-success-hover: #5dd3bb;
+$color-primary: #072f61;
+$color-primary-hover: #0a50a8;
+
+$color-error: #ff2f2f;
+$color-valid: #266f15;
+
+// fonts
+$font-ttweb: 'Titillium Web',
+sans-serif;
+$font-inter: 'Inter',
+sans-serif;
+
+$gutter: 16px;
+$container-max-width: 1200px;
+$container-lg-max-width: 1600px;
+$breakpoints: ( // Extra small screen / phone
+  // Small screen / phone
+  'sm': 576px,
+  // Medium screen / tablet
+  'md': 768px,
+  // Large screen / desktop
+  'lg': 1024px,
+  // Large / Extra large screen
+  'xlg': 1280px,
+  'xxlg': 1440px) !default;
