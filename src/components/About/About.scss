@@ -56,6 +56,7 @@
       font-size: 2rem;
       line-height: 1.5;
       margin: 0;
+      text-shadow: 3px 3px 3px $color-black-dark;
 
       @include breakpoint(md-up) {
         font-size: 2.5rem;
