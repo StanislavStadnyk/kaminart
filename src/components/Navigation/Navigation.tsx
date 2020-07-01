@@ -8,10 +8,10 @@ import { linkAndSmooth } from 'other/utils';
 import './Navigation.scss';
 
 interface INavigationProps {
-  toggle: () => void;
+  closeNavbar: () => void;
 }
 
-const Navigation = ({ toggle }: INavigationProps) => {
+const Navigation = ({ closeNavbar }: INavigationProps) => {
   let history = useHistory();
 
   const offSet = () => {
@@ -21,7 +21,7 @@ const Navigation = ({ toggle }: INavigationProps) => {
   const dropDownLinks = categorySection_list.map((link, index) => {
     return (
       <li key={link.title + index}>
-        <Link to={`/gallery${link.url}`} onClick={toggle}>
+        <Link to={`/gallery${link.url}`} onClick={closeNavbar}>
           {link.title}
         </Link>
       </li>

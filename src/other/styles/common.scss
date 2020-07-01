@@ -1,4 +1,6 @@
 body {
+  margin: 0 !important;
+
   @include breakpoint(lg) {
     font-size: 1rem;
   }
@@ -22,11 +24,20 @@ a {
   }
 }
 
+.fslightbox-open {
+  overflow: visible !important;
+  height: auto !important;
+}
+
 .App {
-  overflow: hidden;
-  padding-top: 168px;
+  //overflow: hidden;
+  //padding-top: 168px;
 
   @include breakpoint(md) {
     padding-top: 70px;
   }
+}
+
+.container-fluid {
+  max-width: 1140px;
 }

@@ -4,8 +4,14 @@
 .Navigation {
   width: 100%;
   background: $color-black;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  @include breakpoint(md-up) {
+    font-size: 24px;
+  }
 
   .navbar-nav {
     width: 100%;
@@ -30,12 +36,12 @@
           color: $primary;
         }
 
-        >ul {
+        > ul {
           display: block;
         }
       }
 
-      >ul {
+      > ul {
         @include list-reset;
         display: none;
         position: absolute;
@@ -44,6 +50,16 @@
         padding: 6px 28px 10px;
         background: $color-black;
         white-space: nowrap;
+        font-size: 18px;
+        letter-spacing: 0;
+
+        li {
+          padding: 2px 0;
+
+          a {
+            display: block;
+          }
+        }
       }
     }
 

@@ -7,11 +7,13 @@ import MainPage from 'pages/MainPage/MainPage';
 import GalleryPage from 'pages/GalleryPage/GalleryPage';
 import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import Footer from 'components/Footer/Footer';
+import ScrollToTop from 'other/utils';
 
 const App = () => {
   return (
     <div className='App' id='top-section'>
       <Router>
+        <ScrollToTop />
         <Header />
 
         <Switch>

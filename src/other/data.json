@@ -206,21 +206,30 @@
       "pathSmall": "/2012/03/img4_s.jpg"
     }
   ],
+
   "country": [
     {
-      "title": "country 1"
+      "pathBig": "/2012/03/img6.jpg",
+      "title": "Классический камин",
+      "pathSmall": "/2012/03/img6_s.jpg"
     },
     {
-      "title": "country 1"
+      "pathBig": "/2012/03/img6.jpg",
+      "title": "Классический камин",
+      "pathSmall": "/2012/03/img6_s.jpg"
     }
   ],
 
   "hitech": [
     {
-      "title": "hitech 1"
+      "pathBig": "/2012/03/img6.jpg",
+      "title": "Классический камин",
+      "pathSmall": "/2012/03/img6_s.jpg"
     },
     {
-      "title": "hitech 1"
+      "pathBig": "/2012/03/img6.jpg",
+      "title": "Классический камин",
+      "pathSmall": "/2012/03/img6_s.jpg"
     }
   ]
 }

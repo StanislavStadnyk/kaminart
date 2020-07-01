@@ -22,7 +22,7 @@ const Info = () => {
             <div className='Info__box'>
               <h4>
                 <Trans i18nKey='infoSection_title'>
-                  Производство и установка <br />(
+                  Изготовление и установка <br />(
                   <strong>камины Харьков</strong>)
                 </Trans>
               </h4>

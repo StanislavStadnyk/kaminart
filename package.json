@@ -44,5 +44,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/fslightbox-react": "^1.4.0",
+    "fslightbox-react": "^1.4.9"
   }
 }

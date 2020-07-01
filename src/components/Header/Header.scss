@@ -2,7 +2,7 @@
 @import 'other/styles/mixins';
 
 .Header {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   flex: auto;
   width: 100%;
@@ -27,8 +27,8 @@
 
   &__logo {
     img {
-      @include breakpoint(md) {
-        width: 130px;
+      @include breakpoint(md-up) {
+        width: 115px;
       }
     }
   }
@@ -45,6 +45,10 @@
   z-index: 1000;
   width: 100%;
   background: $color-white;
+
+  @include breakpoint(md-up) {
+    position: sticky;
+  }
 
   &-toggler {
     position: absolute;

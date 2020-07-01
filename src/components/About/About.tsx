@@ -8,7 +8,7 @@ const About = () => {
     <section className='About container-fluid' id='about-section'>
       <h1>
         <Trans i18nKey='aboutSection_title'>
-          “КаминАрт” – мы несем тепло в Ваши дома
+          “КаминАрт” – тепло и уют в Вашем доме
         </Trans>
       </h1>
       <p>
@@ -21,6 +21,8 @@ const About = () => {
           современным техническим и эстетическим требованиям.
         </Trans>
       </p>
+
+      <h1>Профессионализм и многолетний опыт</h1>
 
       <div className='About__info'>
         <h2>

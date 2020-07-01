@@ -33,7 +33,7 @@ const Header = () => {
                 className='Header__logo'
                 onClick={() => linkAndSmooth(history, '/', 'top-section')}
               >
-                <img src='/assets/logo.png' width={200} alt={LOGO} />
+                <img src='/assets/logo2.png' width={70} alt={LOGO} />
               </Link>
             </Col>
 
@@ -48,7 +48,7 @@ const Header = () => {
       <NavbarToggler onClick={toggleNavbar} />
 
       <Collapse isOpen={!collapsed} navbar>
-        <Navigation toggle={closeNavbar} />
+        <Navigation closeNavbar={closeNavbar} />
       </Collapse>
     </Navbar>
   );

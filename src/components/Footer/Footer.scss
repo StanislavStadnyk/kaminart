@@ -6,13 +6,13 @@
   background: $color-black;
 
   .Logo {
-    background: $color-white;
+    // background: $color-white;
     display: inline-block;
     vertical-align: top;
 
     img {
       @include breakpoint(md-up) {
-        width: 130px;
+        width: 90px;
       }
     }
   }
