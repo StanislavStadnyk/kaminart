@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { Redirect } from 'react-router-dom';
 import FsLightbox from 'fslightbox-react';
 
 import { categorySection_list } from 'other/translations/ru/common.json';
@@ -41,6 +42,10 @@ const GalleryPage = ({
     });
   }
 
+  if (dataArr === undefined) {
+    return <Redirect to='/404' />;
+  }
+
   const tranformatedArrForLightBox = dataArr.map((img: any) => {
     return `/assets/gallery${img.pathBig}`;
   });
@@ -51,7 +56,7 @@ const GalleryPage = ({
 
   const galleryList = dataArr.map((item: IDataItemType, index: number) => {
     return (
-      <Col md={3} sm={4} key={item.title + index}>
+      <Col md={3} sm={4} xs={6} key={item.title + index}>
         <div className='CardBox'>
           <div
             onClick={() => openLightboxOnSlide(index + 1)}
@@ -72,7 +77,7 @@ const GalleryPage = ({
 
   return (
     <section className='GalleryPage'>
-      <Container>
+      <Container fluid={true}>
         <FsLightbox
           toggler={lightboxController.toggler}
           sources={tranformatedArrForLightBox}

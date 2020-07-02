@@ -1,0 +1,52 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.NotFoundPage {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(md-up) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: calc(100vh - 240px);
+  }
+
+  &__holder {
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+
+    div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: $color-white;
+      font-size: 1.5rem;
+      text-shadow: 3px 3px 3px $color-black-dark;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  h3 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
+}

@@ -21,9 +21,9 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
   const dropDownLinks = categorySection_list.map((link, index) => {
     return (
       <li key={link.title + index}>
-        <Link to={`/gallery${link.url}`} onClick={closeNavbar}>
+        <NavLink to={`/gallery${link.url}`} onClick={closeNavbar}>
           {link.title}
-        </Link>
+        </NavLink>
       </li>
     );
   });
@@ -37,7 +37,10 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
               to='/'
               className='nav-link'
               exact
-              onClick={() => linkAndSmooth(history, '/', 'top-section')}
+              onClick={() => {
+                linkAndSmooth(history, '/', 'top-section');
+                closeNavbar();
+              }}
             >
               <Trans i18nKey='navigation_main'>Главная</Trans>
             </NavLink>
@@ -53,12 +56,24 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
             <Link
               to='/'
               className='nav-link'
-              onClick={() =>
-                linkAndSmooth(history, '/', 'about-section', offSet())
-              }
+              onClick={() => {
+                linkAndSmooth(history, '/', 'about-section', offSet());
+                closeNavbar();
+              }}
             >
-              О нас
+              <Trans i18nKey='navigation_about'>О нас</Trans>
             </Link>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              to='/contacts'
+              className='nav-link'
+              onClick={() => {
+                closeNavbar();
+              }}
+            >
+              <Trans i18nKey='navigation_contacts'>Контакты</Trans>
+            </NavLink>
           </NavItem>
         </Nav>
       </Container>

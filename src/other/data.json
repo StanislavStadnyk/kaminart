@@ -207,29 +207,218 @@
     }
   ],
 
-  "country": [
+  "modern": [
     {
-      "pathBig": "/2012/03/img6.jpg",
-      "title": "Классический камин",
-      "pathSmall": "/2012/03/img6_s.jpg"
+      "pathBig": "/2010/08/modern4.jpg",
+      "title": "Автор Багряшов В.А.",
+      "pathSmall": "/2010/08/modern4_s.jpg"
     },
     {
-      "pathBig": "/2012/03/img6.jpg",
-      "title": "Классический камин",
-      "pathSmall": "/2012/03/img6_s.jpg"
+      "pathBig": "/2010/08/modern5.jpg",
+      "title": "Автор Багряшов В.А.",
+      "pathSmall": "/2010/08/modern5_s.jpg"
+    },
+    {
+      "pathBig": "/2010/08/modern6.jpg",
+      "title": "Автор Дмитрий Фоменко",
+      "pathSmall": "/2010/08/modern6_s.jpg"
+    },
+    {
+      "pathBig": "/2011/02/modern7.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2011/02/modern7_s.jpg"
+    },
+    {
+      "pathBig": "/2011/06/modern8.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2011/06/modern8_s.jpg"
+    },
+    {
+      "pathBig": "/2011/06/modern9.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2011/06/modern9_s.jpg"
+    },
+    {
+      "pathBig": "/2012/03/img3.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2012/03/img3_s.jpg"
+    },
+    {
+      "pathBig": "/2012/03/img5.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2012/03/img5_s.jpg"
     }
   ],
 
   "hitech": [
     {
-      "pathBig": "/2012/03/img6.jpg",
-      "title": "Классический камин",
-      "pathSmall": "/2012/03/img6_s.jpg"
+      "pathBig": "/2010/08/modern1.jpg",
+      "title": "Автор Юрий Морозюк",
+      "pathSmall": "/2010/08/modern1_s.jpg"
     },
     {
-      "pathBig": "/2012/03/img6.jpg",
-      "title": "Классический камин",
-      "pathSmall": "/2012/03/img6_s.jpg"
+      "pathBig": "/2010/08/modern2.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2010/08/modern2_s.jpg"
+    },
+    {
+      "pathBig": "/2010/08/modern3.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2010/08/modern3_s.jpg"
+    },
+    {
+      "pathBig": "/2011/06/hitech1.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2011/06/hitech1_s.jpg"
+    }
+  ],
+
+  "country": [
+    {
+      "pathBig": "/2010/09/country1.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2010/09/country1_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/country2.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2010/09/country2_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/country3.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2010/09/country3_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/country4.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2010/09/country4_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/country5.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2010/09/country5_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/country6.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2010/09/country6_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/country7.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2010/09/country7_s.jpg"
+    },
+    {
+      "pathBig": "/2011/02/country8.jpg",
+      "title": "Автор Багряшов В.А.",
+      "pathSmall": "/2011/02/country8_s.jpg"
+    },
+    {
+      "pathBig": "/2011/02/country9.jpg",
+      "title": "Автор Багряшов В.А.",
+      "pathSmall": "/2011/02/country9_s.jpg"
+    },
+    {
+      "pathBig": "/2012/03/img1.jpg",
+      "title": "Кантри камин",
+      "pathSmall": "/2012/03/img1_s.jpg"
+    },
+    {
+      "pathBig": "/2012/03/img2.jpg",
+      "title": "Кантри камин",
+      "pathSmall": "/2012/03/img2_s.jpg"
+    }
+  ],
+
+  "prototype": [
+    {
+      "pathBig": "/2010/09/prototype1.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype1_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype2.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype2_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype12.jpg",
+      "title": "Автор Александра Котевец",
+      "pathSmall": "/2010/09/prototype12_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype5.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype5_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype7.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype7_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype8.jpg",
+      "title": " ",
+      "pathSmall": "/2010/09/prototype8_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype9.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype9_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype10.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype10_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype11.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype11_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype13.jpg",
+      "title": "Автор Юрий Морозюк",
+      "pathSmall": "/2010/09/prototype13_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype14.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype14_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype15.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype15_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype3.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype3_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype4.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype4_s.jpg"
+    },
+    {
+      "pathBig": "/2010/09/prototype6.jpg",
+      "title": "Автор Антонина Щербакова",
+      "pathSmall": "/2010/09/prototype6_s.jpg"
+    }
+  ],
+
+  "bbq": [
+    {
+      "pathBig": "/2020/06/img1.jpg",
+      "title": "Барбекю",
+      "pathSmall": "/2020/06/img1_s.jpg"
+    },
+    {
+      "pathBig": "/2020/06/img2.jpg",
+      "title": "Барбекю",
+      "pathSmall": "/2020/06/img2_s.jpg"
     }
   ]
 }

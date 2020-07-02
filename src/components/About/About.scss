@@ -5,10 +5,11 @@
   text-align: center;
   margin-bottom: 80px;
 
-  h1 {
+  h1,
+  h2 {
     color: $primary;
     font-size: 2rem;
-    font-weight: bold;
+    // font-weight: bold;
     text-align: center;
     display: inline-block;
     padding-bottom: 12px;
@@ -48,7 +49,7 @@
       background-image: url('/assets/bg-about.jpg');
     }
 
-    h2 {
+    h3 {
       text-transform: uppercase;
       text-align: center;
       font-weight: bold;

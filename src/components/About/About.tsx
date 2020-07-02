@@ -22,14 +22,18 @@ const About = () => {
         </Trans>
       </p>
 
-      <h1>Профессионализм и многолетний опыт</h1>
+      <h2>
+        <Trans i18nKey='aboutSection_subTitle'>
+          Профессионализм и многолетний опыт
+        </Trans>
+      </h2>
 
       <div className='About__info'>
-        <h2>
+        <h3>
           <Trans i18nKey='aboutSection_subText'>
             Элитные камины всех стилей и <br /> направлений на заказ
           </Trans>
-        </h2>
+        </h3>
       </div>
     </section>
   );

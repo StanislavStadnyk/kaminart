@@ -1,0 +1,36 @@
+@import 'other/styles/variables';
+@import 'other/styles/mixins';
+
+.BackToTop {
+  @include transition;
+  position: fixed;
+  bottom: 85px;
+  right: 15px;
+  border-radius: 50%;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  box-shadow: 0 0 4px rgba($color-black, 0.4);
+  opacity: 0;
+  visibility: hidden;
+
+  @include breakpoint(md-up) {
+    bottom: 112px;
+  }
+
+  &__show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    background: $color-white !important;
+  }
+
+  img {
+    vertical-align: -3px;
+  }
+}

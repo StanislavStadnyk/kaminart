@@ -33,7 +33,8 @@ const Header = () => {
                 className='Header__logo'
                 onClick={() => linkAndSmooth(history, '/', 'top-section')}
               >
-                <img src='/assets/logo2.png' width={70} alt={LOGO} />
+                <img src='/assets/logo.png' width={150} alt={LOGO} />
+                {/* <img src='/assets/logo2.png' width={70} alt={LOGO} /> */}
               </Link>
             </Col>
 

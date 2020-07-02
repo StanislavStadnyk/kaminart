@@ -5,12 +5,12 @@
   width: 100%;
   background: $color-black;
   padding: 10px 0;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-size: 22px;
+  //font-weight: bold;
+  //letter-spacing: 2px;
 
   @include breakpoint(md-up) {
-    font-size: 24px;
+    // font-size: 24px;
   }
 
   .navbar-nav {
@@ -18,13 +18,13 @@
     justify-content: center;
 
     .nav-item {
-      padding: 0 20px;
-      border-left: 1px solid #474747;
+      padding: 0;
+      border: 0;
       position: relative;
 
-      @include breakpoint(md) {
-        padding: 5px 0;
-        border: 0;
+      @include breakpoint(md-up) {
+        padding: 0 20px;
+        border-left: 1px solid #474747;
       }
 
       &:first-child {
@@ -36,15 +36,14 @@
           color: $primary;
         }
 
-        > ul {
+        >ul {
           display: block;
         }
       }
 
-      > ul {
+      >ul {
         @include list-reset;
         display: none;
-        position: absolute;
         left: 0;
         top: 99%;
         padding: 6px 28px 10px;
@@ -52,12 +51,21 @@
         white-space: nowrap;
         font-size: 18px;
         letter-spacing: 0;
+        min-width: 100%;
+
+        @include breakpoint(md-up) {
+          position: absolute;
+        }
 
         li {
           padding: 2px 0;
 
           a {
             display: block;
+
+            &.active {
+              color: $color-white;
+            }
           }
         }
       }

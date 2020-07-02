@@ -17,7 +17,8 @@ const Footer = () => {
           className='Logo'
           onClick={() => linkAndSmooth(history, '/', 'top-section')}
         >
-          <img src='/assets/logo2-footer.png' width={50} alt={LOGO} />
+          <img src='/assets/logo.png' width={90} alt={LOGO} />
+          {/* <img src='/assets/logo2-footer.png' width={50} alt={LOGO} /> */}
         </Link>
 
         <ul className='Footer__contacts'>
