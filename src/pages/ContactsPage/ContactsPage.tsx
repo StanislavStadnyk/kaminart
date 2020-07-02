@@ -1,12 +1,22 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
-import Intro from 'components/Intro/Intro';
-import Categories from 'components/Categories/Categories';
-import About from 'components/About/About';
-import Info from 'components/Info/Info';
+import './ContactsPage.scss';
 
 const ContactsPage = () => {
-  return <>Contacts</>;
+  return (
+    <section className='ContactsPage'>
+      <Container fluid={true}>
+        <Row>
+          <Col md={{ size: 6, offset: 3 }}>
+            <header className='ContactsPage__header'>
+              <h1>Контакты</h1>
+            </header>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 };
 
 export default ContactsPage;
