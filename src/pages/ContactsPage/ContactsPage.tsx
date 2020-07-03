@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import { Container, Row, Col } from 'reactstrap';
 
 import { INSTAGRAM_URL, TEL, EMAIL, INSTAGRAM } from 'other/constants';
@@ -11,7 +12,9 @@ const ContactsPage = () => {
         <Row>
           <Col md={{ size: 6, offset: 3 }}>
             <header className='ContactsPage__header'>
-              <h1>Контакты</h1>
+              <h1>
+                <Trans i18nKey='navigation_contacts'>Контакты</Trans>
+              </h1>
             </header>
 
             <ul className='ContactsPage__contacts'>
