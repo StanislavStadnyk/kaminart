@@ -1,5 +1,6 @@
 {
   "name": "kamin-art",
+  "homepage": "http://kaminart.com.ua",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -19,4 +19,24 @@
       }
     }
   }
+
+  &__contacts {
+    @include list-reset;
+    font-size: 1.5rem;
+
+    li {
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      a {
+        color: $color-black;
+      }
+    }
+  }
 }
