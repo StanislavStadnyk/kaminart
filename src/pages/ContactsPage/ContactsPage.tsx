@@ -2,7 +2,14 @@ import React from 'react';
 import { Trans } from 'react-i18next';
 import { Container, Row, Col } from 'reactstrap';
 
-import { INSTAGRAM_URL, TEL, EMAIL, INSTAGRAM } from 'other/constants';
+import {
+  INSTAGRAM_URL,
+  TEL,
+  VIBER,
+  TELEGRAM,
+  EMAIL,
+  INSTAGRAM,
+} from 'other/constants';
 import './ContactsPage.scss';
 
 const ContactsPage = () => {
@@ -19,8 +26,26 @@ const ContactsPage = () => {
 
             <ul className='ContactsPage__contacts'>
               <li>
-                <img src='/assets/icons/phone.svg' width='22' alt={TEL} />
-                <a href={`tel:${TEL}`}>{TEL}</a>
+                <img
+                  src='/assets/icons/phone.svg'
+                  width='22'
+                  alt={TEL.preview}
+                />
+                <a href={`tel:${TEL.tel}`}>{TEL.preview}</a>
+              </li>
+              <li>
+                <img src='/assets/icons/viber.svg' width='22' alt={VIBER} />
+                <a href={`viber://chat?number=${TEL.tel}`}>{VIBER}</a>
+              </li>
+              <li>
+                <img
+                  src='/assets/icons/telegram.svg'
+                  width='22'
+                  alt={TELEGRAM.name}
+                />
+                <a href={`tg://resolve?domain=${TELEGRAM.id}`}>
+                  {TELEGRAM.name}
+                </a>
               </li>
               <li>
                 <img src='/assets/icons/mail.svg' width='30' alt={EMAIL} />

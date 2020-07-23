@@ -34,13 +34,12 @@ const Header = () => {
                 onClick={() => linkAndSmooth(history, '/', 'top-section')}
               >
                 <img src='/assets/logo.png' width={150} alt={LOGO} />
-                {/* <img src='/assets/logo2.png' width={70} alt={LOGO} /> */}
               </Link>
             </Col>
 
             <Col sm={6} md={6} className='Header__contacts d-none d-md-flex'>
               <img src='/assets/icons/phone.svg' width='24' alt='' />
-              <a href={`tel:${TEL}`}>{TEL}</a>
+              <a href={`tel:${TEL.tel}`}>{TEL.preview}</a>
             </Col>
           </Row>
         </Container>

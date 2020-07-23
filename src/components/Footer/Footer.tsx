@@ -18,13 +18,12 @@ const Footer = () => {
           onClick={() => linkAndSmooth(history, '/', 'top-section')}
         >
           <img src='/assets/logo.png' width={90} alt={LOGO} />
-          {/* <img src='/assets/logo2-footer.png' width={50} alt={LOGO} /> */}
         </Link>
 
         <ul className='Footer__contacts'>
           <li>
-            <a href={`tel:${TEL}`}>
-              <img src='/assets/icons/phone.svg' width='22' alt={TEL} />
+            <a href={`tel:${TEL.tel}`}>
+              <img src='/assets/icons/phone.svg' width='22' alt={TEL.preview} />
             </a>
           </li>
           <li>

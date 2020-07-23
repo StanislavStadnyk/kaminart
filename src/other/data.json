@@ -1,6 +1,16 @@
 {
   "classic": [
     {
+      "pathBig": "/2020/07/classic1.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2020/07/classic1_s.jpg"
+    },
+    {
+      "pathBig": "/2020/07/classic2.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2020/07/classic2_s.jpg"
+    },
+    {
       "pathBig": "/2010/08/classic1.jpg",
       "title": "Название камина",
       "pathSmall": "/2010/08/classic1_s.jpg"
@@ -208,6 +218,11 @@
   ],
 
   "modern": [
+    {
+      "pathBig": "/2020/07/modern3.jpg",
+      "title": "Название картинки",
+      "pathSmall": "/2020/07/modern3_s.jpg"
+    },
     {
       "pathBig": "/2010/08/modern4.jpg",
       "title": "Автор Багряшов В.А.",
