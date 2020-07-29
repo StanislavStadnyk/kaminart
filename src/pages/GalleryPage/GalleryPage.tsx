@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Redirect } from 'react-router-dom';
 import FsLightbox from 'fslightbox-react';
 
 import { categorySection_list } from 'other/translations/ru/common.json';
-import DataJson from 'other/data.json';
 import './GalleryPage.scss';
 
 interface IGalleryPageProps {
@@ -18,22 +17,35 @@ interface IDataItemType {
   pathSmall: string;
 }
 
-interface IDataGroupType {
-  [key: string]: IDataItemType[];
-}
-
 const GalleryPage = ({
   match: {
     params: { url },
   },
 }: IGalleryPageProps) => {
-  const dataObj: IDataGroupType = DataJson;
-  const dataArr: IDataItemType[] = dataObj[url];
+  const [dataArr, setDataArr] = useState([]);
+  const [dataSourceArr, setDataSourceArr] = useState([]);
 
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
   });
+
+  useEffect(() => {
+    setDataSourceArr([]); // need to reset before fetching
+
+    fetch('/data.json')
+      .then((response) => response.json())
+      .then((data) => {
+        const arr = data[url];
+        setDataArr(arr);
+
+        const tranformatedArrForLightBox = arr.map((img: any) => {
+          return `/assets/gallery${img.pathBig}`;
+        });
+
+        setDataSourceArr(tranformatedArrForLightBox);
+      });
+  }, [url]);
 
   function openLightboxOnSlide(number: number) {
     setLightboxController({
@@ -45,10 +57,6 @@ const GalleryPage = ({
   if (dataArr === undefined) {
     return <Redirect to='/404' />;
   }
-
-  const tranformatedArrForLightBox = dataArr.map((img: any) => {
-    return `/assets/gallery${img.pathBig}`;
-  });
 
   const currentDescription = categorySection_list.find((category) => {
     return category.url.substr(1) === url;
@@ -78,11 +86,13 @@ const GalleryPage = ({
   return (
     <section className='GalleryPage'>
       <Container fluid={true}>
-        <FsLightbox
-          toggler={lightboxController.toggler}
-          sources={tranformatedArrForLightBox}
-          slide={lightboxController.slide}
-        />
+        {dataSourceArr && dataSourceArr.length > 0 && (
+          <FsLightbox
+            toggler={lightboxController.toggler}
+            sources={dataSourceArr}
+            slide={lightboxController.slide}
+          />
+        )}
 
         {currentDescription && (
           <header className='GalleryPage__header'>
