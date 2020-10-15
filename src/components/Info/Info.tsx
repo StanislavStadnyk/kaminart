@@ -10,8 +10,6 @@ const Info = () => {
   const bbq = categorySection_list[5];
   const modern = categorySection_list[1];
 
-  console.log(CardBox);
-
   return (
     <section className='Info'>
       <Container fluid={true}>

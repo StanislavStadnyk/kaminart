@@ -1,13 +1,14 @@
 // colors
 $color-white: #fff;
-$color-green: #9bad01; //#9bad01;
+$color-green: #9bad01;
 $color-black: #272727;
 $color-black-dark: #000;
 $color-grey-light: #f3f3f3;
 
 // Common
 $container-max-width: 1170px;
-$breakpoints: ( // Extra small screen / phone
+$breakpoints: (
+  // Extra small screen / phone
   // Small screen / phone
   'sm': 576px,
   // Medium screen / tablet
@@ -16,7 +17,8 @@ $breakpoints: ( // Extra small screen / phone
   'lg': 1024px,
   // Large / Extra large screen
   'xlg': 1280px,
-  'xxlg': 1440px) !default;
+  'xxlg': 1440px
+) !default;
 
 // Twitter Bootstrap
 // Colors
@@ -26,6 +28,5 @@ $primary: $color-green;
 $body-bg: $color-grey-light;
 
 // Typography
-$font-family-base: 'Open Sans Condensed',
-sans-serif;
+$font-family-base: 'Open Sans Condensed', sans-serif;
 $font-size-base: 1.1rem;

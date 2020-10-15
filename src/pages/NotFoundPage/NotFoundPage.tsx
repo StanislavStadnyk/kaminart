@@ -4,22 +4,20 @@ import { Container } from 'reactstrap';
 
 import './NotFoundPage.scss';
 
-const NotFoundPage = () => {
-  return (
-    <Container fluid={true}>
-      <div className='NotFoundPage'>
-        <div className='NotFoundPage__holder'>
-          <img src='/assets/gif404.gif' alt='404' />
-          <div>
-            <h3>404</h3>
-            <p>
-              <Trans i18nKey='notFoundPage_text'>Страница не найдена!</Trans>
-            </p>
-          </div>
+const NotFoundPage = () => (
+  <Container fluid={true}>
+    <div className='NotFoundPage'>
+      <div className='NotFoundPage__holder'>
+        <img src='/assets/gif404.gif' alt='404' />
+        <div>
+          <h3>404</h3>
+          <p>
+            <Trans i18nKey='notFoundPage_text'>Страница не найдена!</Trans>
+          </p>
         </div>
       </div>
-    </Container>
-  );
-};
+    </div>
+  </Container>
+);
 
 export default NotFoundPage;

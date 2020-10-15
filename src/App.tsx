@@ -14,26 +14,24 @@ import ContactsPage from 'pages/ContactsPage/ContactsPage';
 
 import ScrollToTop from 'other/utils';
 
-const App = () => {
-  return (
-    <div className='App' id='top-section'>
-      <Router>
-        <ScrollToTop />
-        <Header />
+const App = () => (
+  <div className='App' id='top-section'>
+    <Router>
+      <ScrollToTop />
+      <Header />
 
-        <Switch>
-          <Route path='/' exact component={MainPage} />
-          <Route path='/gallery/:url' component={GalleryPage} />
-          <Route path='/contacts' component={ContactsPage} />
-          <Route path='*' component={NotFoundPage} />
-        </Switch>
+      <Switch>
+        <Route path='/' exact component={MainPage} />
+        <Route path='/gallery/:url' component={GalleryPage} />
+        <Route path='/contacts' component={ContactsPage} />
+        <Route path='*' component={NotFoundPage} />
+      </Switch>
 
-        <Footer />
+      <Footer />
 
-        <BackToTop />
-      </Router>
-    </div>
-  );
-};
+      <BackToTop />
+    </Router>
+  </div>
+);
 
 export default App;

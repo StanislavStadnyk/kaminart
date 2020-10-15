@@ -5,15 +5,13 @@ import Categories from 'components/Categories/Categories';
 import About from 'components/About/About';
 import Info from 'components/Info/Info';
 
-const MainPage = () => {
-  return (
-    <>
-      <Intro />
-      <Categories />
-      <About />
-      <Info />
-    </>
-  );
-};
+const MainPage = () => (
+  <>
+    <Intro />
+    <Categories />
+    <About />
+    <Info />
+  </>
+);
 
 export default MainPage;
