@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'reactstrap';
 import { Link, useHistory } from 'react-router-dom';
 
-import { INSTAGRAM_URL, LOGO, TEL, EMAIL } from 'other/constants';
+import { TELEGRAM, LOGO, TEL, EMAIL } from 'other/constants';
 import { linkAndSmooth } from 'other/utils';
 import './Footer.scss';
 
@@ -32,6 +32,15 @@ const Footer = () => {
             </a>
           </li>
           <li>
+            <a href={`tg://resolve?domain=${TELEGRAM.id}`}>
+              <img
+                src='/assets/icons/telegram.svg'
+                width='24'
+                alt={TELEGRAM.name}
+              />
+            </a>
+          </li>
+          {/* <li>
             <a href={INSTAGRAM_URL} target='_blank' rel='noopener noreferrer'>
               <img
                 src='/assets/icons/instagram.svg'
@@ -39,7 +48,7 @@ const Footer = () => {
                 alt={INSTAGRAM_URL}
               />
             </a>
-          </li>
+          </li> */}
         </ul>
       </Container>
     </footer>

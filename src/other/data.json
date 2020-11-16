@@ -267,6 +267,11 @@
 
   "hitech": [
     {
+      "pathBig": "/2020/11/hitech1.jpg",
+      "title": "Название камина",
+      "pathSmall": "/2020/11/hitech1_s.jpg"
+    },
+    {
       "pathBig": "/2010/08/modern1.jpg",
       "title": "Автор Юрий Морозюк",
       "pathSmall": "/2010/08/modern1_s.jpg"
