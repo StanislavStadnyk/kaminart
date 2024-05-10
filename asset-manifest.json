@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/kaminart/static/css/main.1b427c6f.chunk.css",
+    "main.js": "/kaminart/static/js/main.735cda84.chunk.js",
+    "main.js.map": "/kaminart/static/js/main.735cda84.chunk.js.map",
+    "runtime-main.js": "/kaminart/static/js/runtime-main.884f9887.js",
+    "runtime-main.js.map": "/kaminart/static/js/runtime-main.884f9887.js.map",
+    "static/css/2.8ff17cee.chunk.css": "/kaminart/static/css/2.8ff17cee.chunk.css",
+    "static/js/2.ed3534f7.chunk.js": "/kaminart/static/js/2.ed3534f7.chunk.js",
+    "static/js/2.ed3534f7.chunk.js.map": "/kaminart/static/js/2.ed3534f7.chunk.js.map",
+    "index.html": "/kaminart/index.html",
+    "precache-manifest.8b174e848ae115555fc2c8943965339d.js": "/kaminart/precache-manifest.8b174e848ae115555fc2c8943965339d.js",
+    "service-worker.js": "/kaminart/service-worker.js",
+    "static/css/2.8ff17cee.chunk.css.map": "/kaminart/static/css/2.8ff17cee.chunk.css.map",
+    "static/css/main.1b427c6f.chunk.css.map": "/kaminart/static/css/main.1b427c6f.chunk.css.map",
+    "static/js/2.ed3534f7.chunk.js.LICENSE.txt": "/kaminart/static/js/2.ed3534f7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.884f9887.js",
+    "static/css/2.8ff17cee.chunk.css",
+    "static/js/2.ed3534f7.chunk.js",
+    "static/css/main.1b427c6f.chunk.css",
+    "static/js/main.735cda84.chunk.js"
+  ]
+}
