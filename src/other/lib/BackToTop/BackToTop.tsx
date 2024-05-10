@@ -32,7 +32,7 @@ const BackToTop = () => {
       className={classes}
       onClick={() => handlerScrollToId('top-section', 0)}
     >
-      <img src='/assets/icons/chevron-up.svg' width='24' alt='top' />
+      <img src='/kaminart/assets/icons/chevron-up.svg' width='24' alt='top' />
     </Button>
   );
 };

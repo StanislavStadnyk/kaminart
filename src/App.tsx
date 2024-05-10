@@ -13,6 +13,7 @@ import NotFoundPage from 'pages/NotFoundPage/NotFoundPage';
 import ContactsPage from 'pages/ContactsPage/ContactsPage';
 
 import ScrollToTop from 'other/utils';
+import {PROD_URL} from "./config";
 
 const App = () => (
   <div className='App' id='top-section'>
@@ -21,10 +22,10 @@ const App = () => (
       <Header />
 
       <Switch>
-        <Route path='/' exact component={MainPage} />
-        <Route path='/gallery/:url' component={GalleryPage} />
-        <Route path='/contacts' component={ContactsPage} />
-        <Route path='*' component={NotFoundPage} />
+        <Route path={PROD_URL} exact component={MainPage} />
+        <Route path={`${PROD_URL}/gallery/:url`} component={GalleryPage} />
+        <Route path={`${PROD_URL}/contacts`} component={ContactsPage} />
+        <Route path={`${PROD_URL}*`} component={NotFoundPage} />
       </Switch>
 
       <Footer />

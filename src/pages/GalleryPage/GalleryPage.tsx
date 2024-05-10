@@ -5,6 +5,7 @@ import FsLightbox from 'fslightbox-react';
 
 import { categorySection_list } from 'other/translations/ru/common.json';
 import './GalleryPage.scss';
+import {PROD_URL} from "../../config";
 
 interface IGalleryPageProps {
   match: any;
@@ -33,14 +34,14 @@ const GalleryPage = ({
   useEffect(() => {
     setDataSourceArr([]); // need to reset before fetching
 
-    fetch('/data.json')
+    fetch(`${PROD_URL}/data.json`)
       .then((response) => response.json())
       .then((data) => {
         const arr = data[url];
         setDataArr(arr);
 
         const tranformatedArrForLightBox = arr.map((img: any) => {
-          return `/assets/gallery${img.pathBig}`;
+          return `/kaminart/assets/gallery${img.pathBig}`;
         });
 
         setDataSourceArr(tranformatedArrForLightBox);
@@ -72,7 +73,7 @@ const GalleryPage = ({
           >
             <div className='CardBox__img'>
               <img
-                src={`/assets/gallery${item.pathSmall}`}
+                src={`/kaminart/assets/gallery${item.pathSmall}`}
                 alt=''
                 width='100%'
               />

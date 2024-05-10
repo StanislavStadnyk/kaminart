@@ -25,28 +25,28 @@ const ContactsPage = () => (
 
           <ul className='ContactsPage__contacts'>
             <li>
-              <img src='/assets/icons/phone.svg' width='22' alt={TEL.preview} />
+              <img src='/kaminart/assets/icons/phone.svg' width='22' alt={TEL.preview} />
               <a href={`tel:${TEL.tel}`}>{TEL.preview}</a>
             </li>
             <li>
-              <img src='/assets/icons/viber.svg' width='22' alt={VIBER} />
+              <img src='/kaminart/assets/icons/viber.svg' width='22' alt={VIBER} />
               <a href={`viber://chat?number=${TEL.tel}`}>{VIBER}</a>
             </li>
             <li>
               <img
-                src='/assets/icons/telegram.svg'
+                src='/kaminart/assets/icons/telegram.svg'
                 width='22'
                 alt={TELEGRAM.name}
               />
               <a href={`tg://resolve?domain=${TELEGRAM.id}`}>{TELEGRAM.name}</a>
             </li>
             <li>
-              <img src='/assets/icons/mail.svg' width='30' alt={EMAIL} />
+              <img src='/kaminart/assets/icons/mail.svg' width='30' alt={EMAIL} />
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
             <li>
               <img
-                src='/assets/icons/instagram.svg'
+                src='/kaminart/assets/icons/instagram.svg'
                 width='24'
                 alt={INSTAGRAM_URL}
               />

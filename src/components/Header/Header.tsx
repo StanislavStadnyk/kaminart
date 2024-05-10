@@ -13,6 +13,7 @@ import { LOGO, TEL } from 'other/constants';
 import Navigation from 'components/Navigation/Navigation';
 import { linkAndSmooth } from 'other/utils';
 import './Header.scss';
+import {PROD_URL} from "../../config";
 
 const Header = () => {
   let history = useHistory();
@@ -29,16 +30,16 @@ const Header = () => {
           <Row>
             <Col sm={6} md={6}>
               <Link
-                to='/'
+                to={PROD_URL}
                 className='Header__logo'
                 onClick={() => linkAndSmooth(history, '/', 'top-section')}
               >
-                <img src='/assets/logo.png' width={150} alt={LOGO} />
+                <img src='/kaminart/assets/logo.png' width={150} alt={LOGO} />
               </Link>
             </Col>
 
             <Col sm={6} md={6} className='Header__contacts d-none d-md-flex'>
-              <img src='/assets/icons/phone.svg' width='24' alt='' />
+              <img src='/kaminart/assets/icons/phone.svg' width='24' alt='' />
               <a href={`tel:${TEL.tel}`}>{TEL.preview}</a>
             </Col>
           </Row>

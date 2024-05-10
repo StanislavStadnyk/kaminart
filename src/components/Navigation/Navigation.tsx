@@ -6,6 +6,7 @@ import { NavLink, useHistory, Link } from 'react-router-dom';
 import { categorySection_list } from 'other/translations/ru/common.json';
 import { linkAndSmooth } from 'other/utils';
 import './Navigation.scss';
+import {PROD_URL} from "../../config";
 
 interface INavigationProps {
   closeNavbar: () => void;
@@ -21,7 +22,7 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
   const dropDownLinks = categorySection_list.map((link, index) => {
     return (
       <li key={link.title + index}>
-        <NavLink to={`/gallery${link.url}`} onClick={closeNavbar}>
+        <NavLink to={`${PROD_URL}/gallery${link.url}`} onClick={closeNavbar}>
           {link.title}
         </NavLink>
       </li>
@@ -34,7 +35,7 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
         <Nav navbar>
           <NavItem>
             <NavLink
-              to='/'
+              to={PROD_URL}
               className='nav-link'
               exact
               onClick={() => {
@@ -54,7 +55,7 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
           </NavItem>
           <NavItem>
             <Link
-              to='/'
+              to={PROD_URL}
               className='nav-link'
               onClick={() => {
                 linkAndSmooth(history, '/', 'about-section', offSet());
@@ -66,7 +67,7 @@ const Navigation = ({ closeNavbar }: INavigationProps) => {
           </NavItem>
           <NavItem>
             <NavLink
-              to='/contacts'
+              to={`${PROD_URL}/contacts`}
               className='nav-link'
               onClick={() => {
                 closeNavbar();

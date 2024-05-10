@@ -3,6 +3,7 @@ import { Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 import './CardBox.scss';
+import {PROD_URL} from "../../config";
 
 interface IItemProps {
   url: string;
@@ -17,9 +18,9 @@ const CardBox = (item: IItemProps) => {
   return (
     <Col md={4} sm={6} key={text}>
       <div className='CardBox'>
-        <Link to={`/gallery${url}`} className='CardBox__link'>
+        <Link to={`${PROD_URL}/gallery${url}`} className='CardBox__link'>
           <div className='CardBox__img'>
-            <img src={`/assets/categories/${img}`} alt={title} width='100%' />
+            <img src={`/kaminart/assets/categories/${img}`} alt={title} width='100%' />
           </div>
           <h3>{title}</h3>
           <p>{text}</p>

@@ -8,7 +8,7 @@ const NotFoundPage = () => (
   <Container fluid={true}>
     <div className='NotFoundPage'>
       <div className='NotFoundPage__holder'>
-        <img src='/assets/gif404.gif' alt='404' />
+        <img src='/kaminart/assets/gif404.gif' alt='404' />
         <div>
           <h3>404</h3>
           <p>

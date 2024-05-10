@@ -33,7 +33,7 @@
   &__info {
     margin-top: 60px;
     height: 370px;
-    background: url('/assets/bg-about-mobile.jpg') no-repeat 50% 50%;
+    background: url('/kaminart/assets/bg-about-mobile.jpg') no-repeat 50% 50%;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -42,11 +42,11 @@
 
     @include breakpoint(md-up) {
       height: 470px;
-      background-image: url('/assets/bg-about-tablet.jpg');
+      background-image: url('/kaminart/assets/bg-about-tablet.jpg');
     }
 
     @include breakpoint(lg-up) {
-      background-image: url('/assets/bg-about.jpg');
+      background-image: url('/kaminart/assets/bg-about.jpg');
     }
 
     h3 {
